@@ -16,7 +16,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: #b94628;
     border-width: 3px;
 }
 
@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: #9e351d;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -33,16 +33,18 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #722513;
+    text-decoration: underline;
 }
 
 #about a {
-    color: rgba(52, 52, 52, .7);
+    color: #fff;
+    font-weight: 700;
 }
 
 #about a:hover,
 #about a:focus {
-    color: rgb(52, 52, 52);
+    color: #fff;
 }
 
 h1,
@@ -61,7 +63,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #b94628;
 }
 
 .bg-dark {
@@ -70,7 +72,7 @@ p {
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.95);
 }
 
 section {
@@ -98,12 +100,15 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: #b94628;
+    line-height: 1.25;
+    white-space: normal;
+    max-width: calc(100vw - 96px);
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #722513;
 }
 
 .navbar-default .nav > li>a,
@@ -116,12 +121,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #b94628;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #b94628!important;
     background-color: transparent;
 }
 
@@ -137,7 +142,8 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,.95);
+        max-width: none;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -147,7 +153,7 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,.95);
     }
 
     .navbar-default .nav > li>a:hover,
@@ -162,12 +168,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: #b94628;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #722513;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -177,14 +183,24 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #b94628;
     }
 }
 
 header {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 100%;
-    min-height: auto;
+    min-height: 100vh;
+    padding: 80px 15px;
     text-align: center;
     color: #fff;
     background-image: url(../img/header.jpg);
@@ -198,7 +214,7 @@ header {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 0;
     text-align: center;
 }
 
@@ -217,21 +233,27 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.95);
+    text-shadow: 0 1px 2px rgba(0,0,0,.45);
+}
+
+header .header-content .header-content-inner h1 {
+    text-shadow: 0 2px 4px rgba(0,0,0,.45);
 }
 
 @media(min-width:768px) {
     header {
-        min-height: 100%;
+        min-height: 100vh;
+        padding: 80px 50px;
     }
 
     header .header-content {
-        position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        position: relative;
+        top: auto;
+        padding: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
     }
 
     header .header-content .header-content-inner {
@@ -333,7 +355,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: #b94628;
 }
 
 .no-gutter > [class*=col-] {
@@ -395,9 +417,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #b94628;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #b94628;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -409,9 +431,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #96371f;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #96371f;
 }
 
 .btn-primary:active,
@@ -438,18 +460,18 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
+    border-color: #b94628;
+    background-color: #b94628;
 }
 
 .btn-primary .badge {
-    color: #f05f40;
+    color: #b94628;
     background-color: #fff;
 }
 
 .btn {
     border: 0;
-    border-radius: 300px;
+    border-radius: 4px;
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
@@ -483,6 +505,49 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.skip-link {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 2000;
+    padding: 10px 14px;
+    color: #fff;
+    background: #222;
+    transform: translateY(-150%);
+}
+
+.skip-link:focus {
+    color: #fff;
+    transform: translateY(0);
+}
+
+a:focus,
+button:focus,
+.btn:focus,
+.navbar-toggle:focus {
+    outline: 3px solid #111;
+    outline-offset: 3px;
+}
+
+#main-content:focus {
+    outline: none;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
 }
 
 #map {
