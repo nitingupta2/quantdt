@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4321/about/</loc>
+    <loc>https://www.quantdt.com/about/</loc>
   </url><url>
-    <loc>http://localhost:4321/accessibility/</loc>
+    <loc>https://www.quantdt.com/accessibility/</loc>
   </url><url>
-    <loc>http://localhost:4321/capabilities/</loc>
+    <loc>https://www.quantdt.com/capabilities/</loc>
   </url><url>
-    <loc>http://localhost:4321/contact/</loc>
+    <loc>https://www.quantdt.com/contact/</loc>
   </url><url>
-    <loc>http://localhost:4321/contracting/</loc>
+    <loc>https://www.quantdt.com/contracting/</loc>
   </url><url>
-    <loc>http://localhost:4321/</loc>
+    <loc>https://www.quantdt.com/</loc>
   </url>
 </urlset>
